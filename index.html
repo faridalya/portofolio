@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Portfolio - Farida ALya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="preloader">
+        <div class="loader-building">
+            <div class="building-part"></div>
+            <div class="building-part"></div>
+            <div class="building-part"></div>
+            <div class="building-part"></div>
+        </div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Floating Geometric Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-pencil-ruler"></i> FALya.</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Keahlian</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Proyek</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line-1">Welcome to</span>
+                    <span class="title-line-2">My Portofolio</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="subtitle-word">Menciptakan</span>
+                    <span class="subtitle-word">gambar</span>
+                    <span class="subtitle-word">teknik</span>
+                    <span class="subtitle-word">yang</span>
+                    <span class="subtitle-word">presisi,</span>
+                    <span class="subtitle-word">profesional,</span>
+                    <span class="subtitle-word">dan</span>
+                    <span class="subtitle-word">inovatif</span>
+                    <span class="subtitle-word">untuk</span>
+                    <span class="subtitle-word">setiap</span>
+                    <span class="subtitle-word">proyek</span>
+                    <span class="subtitle-word">konstruksi</span>
+                    <span class="subtitle-word">Anda</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 3D Building Animation -->
+                <div class="building-3d-container">
+                    <div class="building-3d">
+                        <div class="building-floor floor-1">
+                            <div class="floor-front"></div>
+                            <div class="floor-back"></div>
+                            <div class="floor-left"></div>
+                            <div class="floor-right"></div>
+                            <div class="floor-top"></div>
+                        </div>
+                        <div class="building-floor floor-2">
+                            <div class="floor-front"></div>
+                            <div class="floor-back"></div>
+                            <div class="floor-left"></div>
+                            <div class="floor-right"></div>
+                            <div class="floor-top"></div>
+                        </div>
+                        <div class="building-floor floor-3">
+                            <div class="floor-front"></div>
+                            <div class="floor-back"></div>
+                            <div class="floor-left"></div>
+                            <div class="floor-right"></div>
+                            <div class="floor-top"></div>
+                        </div>
+                        <div class="building-roof">
+                            <div class="roof-front"></div>
+                            <div class="roof-back"></div>
+                            <div class="roof-left"></div>
+                            <div class="roof-right"></div>
+                        </div>
+                    </div>
+                    <!-- Construction Icons -->
+                    <div class="construction-icons">
+                        <i class="fas fa-hard-hat icon-1"></i>
+                        <i class="fas fa-ruler-combined icon-2"></i>
+                        <i class="fas fa-tools icon-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blueprint Grid Animation -->
+        <div class="blueprint-grid"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder" data-tilt>
+                        <img src="/img/sibocil.jpg" alt="Foto Profil">
+                        <div class="profile-overlay">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="about-text">
+                    <h3>Farida Alya Pitaloka</h3>
+                    <p>Saya adalah seorang drafter teknik sipil dengan pengalaman dalam membuat gambar teknik yang akurat dan detail untuk berbagai proyek konstruksi. Keahlian saya meliputi pembuatan gambar arsitektur, struktur, dan detail konstruksi menggunakan software CAD terkini.</p>
+                    <p>Dengan dedikasi tinggi terhadap presisi dan kualitas, saya berkomitmen untuk menghasilkan gambar teknik yang memenuhi standar industri dan membantu mewujudkan visi proyek konstruksi Anda.</p>
+                    <div class="about-stats">
+                        <div class="stat" data-count="15">
+                            <h4>0+</h4>
+                            <p>Proyek Selesai</p>
+                        </div>
+                        <div class="stat" data-count="4">
+                            <h4>0+</h4>
+                            <p>Tahun Pengalaman</p>
+                        </div>
+                        <div class="stat" data-count="100">
+                            <h4>0%</h4>
+                            <p>Kepuasan Klien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian Teknis</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Software CAD</h3>
+                    <div class="skill-item">
+                        <span>AutoCAD</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>SketchUp</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Revit</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-drafting-compass"></i> Keahlian Teknis</h3>
+                    <div class="skill-item">
+                        <span>Gambar Arsitektur</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Gambar Struktur</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="88">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">88%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Detail Konstruksi</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="92">
+                                <div class="progress-wave"></div>
+                            </div>
+                        </div>
+                        <span class="percentage">92%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Portfolio Proyek</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="project-content">
+                                <h3>Rumah Tinggal 2 Lantai</h3>
+                                <p>Gambar arsitektur dan struktur untuk rumah tinggal modern dengan luas 150m²</p>
+                                <div class="project-tags">
+                                    <span class="tag">AutoCAD</span>
+                                    <span class="tag">Rumah Tinggal</span>
+                                    <span class="tag">Arsitektur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Denah Lantai 1 & 2</li>
+                                <li><i class="fas fa-check"></i> Tampak Depan & Samping</li>
+                                <li><i class="fas fa-check"></i> Potongan Struktur</li>
+                                <li><i class="fas fa-check"></i> Detail Konstruksi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="project-content">
+                                <h3>Site Planning</h3>
+                                <p>Penyusunan gambar site plan yang mencakup tata letak bangunan, akses jalan, area parkir, dan sistem sirkulasi kawasan.</p>
+                                <div class="project-tags">
+                                    <span class="tag">AutoCAD</span>
+                                    <span class="tag">Site Plan</span>
+                                    <span class="tag">Perencanaan Kawasan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Layout Kawasan</li>
+                                <li><i class="fas fa-check"></i> Sistem Jalan & Parkir</li>
+                                <li><i class="fas fa-check"></i> Landscape Design</li>
+                                <li><i class="fas fa-check"></i> Utilitas Kawasan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <div class="project-content">
+                                <h3>Desain Interior</h3>
+                                <p>Pembuatan gambar desain interior meliputi layout ruang, detail furnitur, serta penataan elemen interior sesuai fungsi ruang.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Interior</span>
+                                    <span class="tag">Layout Ruang</span>
+                                    <span class="tag">AutoCAD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Layout Furnitur</li>
+                                <li><i class="fas fa-check"></i> Detail Custom Furniture</li>
+                                <li><i class="fas fa-check"></i> Material Specification</li>
+                                <li><i class="fas fa-check"></i> Lighting Plan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="project-content">
+                                <h3>Analisis Struktur Bangunan Rumah Tinggal</h3>
+                                <p>Pembuatan gambar desain interior meliputi layout ruang, detail furnitur, serta penataan elemen interior sesuai fungsi ruang.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Struktur</span>
+                                    <span class="tag">Analisis Struktur</span>
+                                    <span class="tag">Rumah Tinggal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Detail Proyek</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Struktur Pondasi</li>
+                                <li><i class="fas fa-check"></i> Struktur Kolom & Balok</li>
+                                <li><i class="fas fa-check"></i> Struktur Atap</li>
+                                <li><i class="fas fa-check"></i> Detail Sambungan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Bekerja Sama</h3>
+                    <p>Siap membantu mewujudkan proyek konstruksi Anda dengan gambar teknik yang presisi dan berkualitas tinggi.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tamuzhehe17@gmail.com" target="_blank">
+                                    tamuzhehe17@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 822-1014-8829</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn (Coming Soon)">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/6282210148829" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/alyaptloka_?igsh=MW4wcXg4cmJ1anp5Yg==" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Portfolio Drafter Teknik Sipil. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>
